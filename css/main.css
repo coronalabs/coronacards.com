@@ -1,0 +1,583 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html, body {
+    height: 100%;
+}
+body {
+  color: #555;
+}
+
+#wrap {
+    height: auto;
+    margin: 0 auto -110px;
+    min-height: 100%;
+    padding: 70px 0 170px;
+    box-shadow: 0 0 6px 3px rgba(157, 157, 157, 0.39);
+    margin: 0 auto -150px;
+    max-width: 1200px;
+}
+
+/*.btn {border-radius: 0 !important}*/
+#top-signup-btn.btn-default {
+    background-color: #555555;
+    border-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+}
+a:active {outline: 0;}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0px;
+    width: 90%;
+}
+.well h1, .well h2, .well h3 {
+	margin-top: 0;
+}
+.padl60 {
+  padding-left: 60px;
+}
+.padr60 {
+  padding-right: 60px;
+}
+.padrl60 {
+  padding: 0 60px;
+}
+.padt20 {
+  padding-top: 20px;
+}
+.padb20 {
+  padding-top: 20px;
+}
+.marg20 {margin:20 0;}
+
+tr.space td {
+  padding: 30px 13px;
+}
+.popover-content {
+    line-height: 1.4;
+    padding: 9px 14px;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.navbar-nav {
+    float: right;
+    margin: 0 -15px 0 0;
+}
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper .navbar {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar > .container .navbar-brand {
+    margin-left: -5px;
+}
+.navbar-fixed-top {
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1030;
+}
+.navbar-corona-blue {
+    background-color:rgba(37, 124, 245, 0.85);
+    border-color: rgba(18, 66, 132, 0.55);
+    border-width: 0 0 2px;
+}
+.navbar-corona-blue .navbar-nav > .active > a, .navbar-corona-blue .navbar-nav > .active > a:hover, .navbar-corona-blue .navbar-nav > .active > a:focus {
+    background-color: rgba(18, 66, 132, 0.55);
+    color: #FFFFFF;
+}
+.navbar-corona-blue .navbar-nav > li > a:hover, .navbar-corona-blue .navbar-nav > li > a:focus {
+    background-color: rgba(0, 0, 0, .25);
+    color: #FFFFFF;
+}
+.navbar-corona-blue .navbar-brand {
+    color: #FFFFFF;
+    padding-left: 40px;
+    background: url(../images/coronakit-logo-w.png) no-repeat center left;
+    background-size:35px;
+}
+.navbar-corona-blue .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+.navbar-corona-monochrome {
+    background-color:rgba(255, 255, 255, .93);
+    border-color: rgba(255, 255, 255, 0);
+    border-width: 0;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.08);
+}
+.navbar-corona-monochrome .navbar-nav > .active > a, .navbar-corona-monochrome .navbar-nav > .active > a:hover, .navbar-corona-monochrome .navbar-nav > .active > a:focus {
+    background-color: rgba(255, 255, 255, 0);
+    color: #000;
+}
+.navbar-corona-monochrome .navbar-nav > li > a:hover, .navbar-corona-monochrome .navbar-nav > li > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+}
+.navbar-corona-monochrome .navbar-brand {
+    background: url("../images/cc-logo2.png") no-repeat scroll left center / 100% auto rgba(0, 0, 0, 0);
+    color: #000000;
+    margin-top: 10px;
+    opacity: 0.8;
+    padding-left: 40px;
+    width: 260px;
+}
+.navbar-corona-monochrome .navbar-brand:hover {
+    opacity: 1;
+}
+.navbar-corona-monochrome .navbar-nav > li > a {
+    color: #6d6d6d;
+    font-size: 16px;
+    text-transform: lowercase;
+    font-variant:small-caps;
+}
+.navbar-corona-monochrome .navbar-brand:hover, .navbar-corona-monochrome .navbar-brand:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+}
+.navbar-corona-monochrome .navbar-nav > .open > a, .navbar-corona-monochrome .navbar-nav > .open > a:hover, .navbar-corona-monochrome .navbar-nav > .open > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+}
+.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 0;
+    box-shadow: 6px 10px 0 rgba(0, 0, 0, 0.04);
+    display: none;
+    float: left;
+    font-size: 14px;
+    left: -44%;
+    list-style: none outside none;
+    margin: 2px 0 0;
+    min-width: 150px;
+    padding: 5px 0;
+    position: absolute;
+    top: 80%;
+    z-index: 1000;
+}
+.dropdown-header {
+    color: #999999;
+    display: block;
+    font-size: 18px;
+    line-height: 1.42857;
+    padding: 3px 20px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+.nav.navbar-nav {
+    float: none;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: rgba(0, 0, 0, 0);
+}
+.navbar-toggle {
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: none;
+    border: 0 none;
+    border-radius: 0;
+    height: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 9px 27px;
+    position: absolute;
+    right: -15px;
+}
+.navbar-toggle .icon-bar {
+    background: #222;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: rgba(0, 0, 0, .4);
+    color: #111;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: rgba(0, 0, 0, 0.11);
+    margin: 0 -30px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: rgba(0, 0, 0, 0.11);
+}
+.container > .navbar-header, .container > .navbar-collapse {
+    margin-left: -13px;
+    margin-right: -15px;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+#topBanner {
+  background:url(/images/CoronaKit_Panel3a.jpg) no-repeat 0 0;
+  background-size: 100% auto;
+  padding: 30px 0;
+}
+#topBanner h1 span {
+  font-size: .67em;
+}
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette-divider.noline{
+  border: 0;
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300 !important;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.lead {
+    font-size: 18px;
+}
+
+
+/* Jumbotron
+------------------------- */
+
+.jumbotron {
+  background-color: #FBFBFB;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 768px) {
+  .affix {
+    position: relative;
+  }
+  .featurette div {
+    margin-bottom: 20px;
+  }
+  #topBanner {
+    background:url(/images/CoronaKit_Panel3a.jpg) no-repeat center right;
+    background-size: auto;
+  }
+  #topBanner h1 {
+    color: #FFFFFF;
+    font-size: 28px;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  #top-signup-btn {
+    margin: 10px 0;
+  }
+  #topBanner-col2 {
+    text-align: center;
+  }
+  .small > ul {
+      display: block;
+      margin: 0 auto;
+      width: 260px;
+  }
+  .col-sm-3 h4 {
+      text-align: center;
+  }
+  .modal-content {
+      height: 40%;
+  }
+}
+@media (min-width: 768px) {
+
+	.nav.navbar-nav {
+	    float: right;
+	}
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: auto;
+  }
+/*  .featurette-heading {
+    margin-top: 90px;
+  }*/
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #topBanner h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin: 0;
+  }
+  #top-signup-btn {
+    margin: 25px 0;
+  }
+  #topBanner-col2 {
+    text-align: right;
+  }
+  /* Bump up size of carousel content */
+  .carousel-caption h1 {
+    margin-top: 25px;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+  .carousel-inner > .item > img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+  .featurette-heading {
+    font-size: 36px;
+  }
+  .carousel-inner > .item > img {
+    min-width: 970px;
+  }
+  .modal-content {
+      height: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-inner > .item > img {
+    min-width: 1170px;
+  }
+  #topBanner h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin: 0;
+  }
+  .carousel-caption h1 {
+    margin-top: 40px;
+    font-size: 50px;
+    line-height: 1.4;
+  }
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+  .affix {
+    position: fixed;
+    top: 70px;
+  }
+  h2.featurette-heading {
+    font-size: 36px;
+    /*margin-top: 65px;*/
+    margin-bottom: 25px
+  }
+  h3.featurette-heading {
+    font-size: 30px;
+  }
+  .modal-content {
+      height: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featurette-heading {
+    /*margin-top: 70px;*/
+  }
+  .modal-content {
+      height: 80%;
+  }
+}
+
+.affix-top {
+    margin-top: 32px;
+}
+
+/*   FOOTER   */
+
+#footer {
+	padding: 40px 20px;
+	color: #EDB17D;
+	margin: 0 auto;
+    max-width: 1200px;
+	background: url("/images/footerbg.jpg") no-repeat scroll center center / 200% auto rgba(0, 0, 0, 0);
+}
+#footer a {color:#FFD1AE;text-decoration: none !important;border-bottom: 1px dotted #EDB17D;}
+#footer-logo {
+	margin:5px 0 0;
+	float: right;
+}
+
+.featurette .img-responsive {
+    min-width: 400px !important;
+    width: 100%;
+}
+.btn-blue {
+    border-color: transparent;
+    background-color: #4E7FC2;
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.38);
+    color: #FFF;
+}
+.well {
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 0;
+    margin: 0 15px;
+    min-height: 20px;
+    padding: 19px;
+}
+#modal1 .modal-content {
+  text-align: center;
+}
+.modal-dialog {width: 80%;}
+.modal-body {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.modal-body iframe,
+.modal-body object,
+.modal-body embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.nav-tabs > li > a {
+    background: none repeat scroll 0 0 #DADADA;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 8px 8px 0 0;
+    line-height: 1.42857;
+    margin-right: 8px;
+}
+.nav-tabs > li.last > a {
+    margin-right: 0;
+}
+.nav-tabs > li > a:hover {
+    border-color: #EEEEEE #EEEEEE #DDDDDD;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #FFF;
+    text-decoration: none;
+}
+#dev-ad-tabs.nav-tabs {
+    background: #F2F2F2;
+    margin-top: 0;
+    padding: 45px 45px 0;
+}
+#dev-ad-tabs.nav-tabs li {
+  width: 33.3333%;
+  text-align:center;
+}
+#dev-ad-tabs.nav-tabs li a {
+  outline: 0;
+  color:#717171;
+  font-size: 16px;
+}
+#dev-ad-tabs.nav-tabs li.active a {
+    box-shadow: 0 -6px 7px -2px rgba(152, 152, 152, 0.15);
+}
+li.active a {
+  border-bottom: 1px solid #F57F20;
+  color:balck;
+}
+.addthis_toolbox {
+  opacity:.4;
+}
+.addthis_toolbox:hover {
+  opacity:1;
+}
+.cicon {display: inline-block;width: 20px;height: 20px;}
+.cicon.cicon-ok {background: url(http://coronalabs.com/images/checkmark_checked_20.png) no-repeat center center;}
+.feature-chart {width: 100%; border-bottom: 2px solid #DEDEDE;}
+.feature-chart tr {border-top: 0px solid #EDEDED;}
+.feature-chart th, #plugin-table td {height:40px;padding: 5px;}
+.feature-chart th {
+  color: #555555;
+    font-family: lato,sans-serif;
+    font-size: 1.35em;
+    font-weight: 400;
+    vertical-align: top
+}
+.feature-chart th {
+    /*border-bottom: 3px solid #E89957;*/
+    width: 100px;
+}
+.feature-chart td {font-size: 14px;color:#999;line-height: 3.3;}
+.feature-chart .yes, #plugin-table .no {color:#ADADAD;font-weight: 100;text-align: center;}
+.feature-chart .yes {background: #E7FFE7;color: #75C974;}
+.feature-chart .no {background:#FEFEFE;color:#FFB8B8;}
+.feature-chart td.name img {width:100px;margin-right:10px;}
+.feature-chart th h5 {
+    color: #AAAAAA;
+    font-size: 1.5em;
+}
+.feature-chart td h4 {
+    color: #E89957;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-shadow: 0 0 1px #AAAAAA;
+}
+.ac {text-align:center;}
+.size-down {font-size: .8em;line-height: 1;}
+.btn.btn-default.btn-round.btn-xs {
+    border-radius: 50px;
+    line-height: 1;
+    padding: 4px 8px;
+}

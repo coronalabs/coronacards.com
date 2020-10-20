@@ -1,0 +1,105 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: auto;
+    margin: 0 auto 60px;
+    max-width: 1400px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    top: 0px;
+    color: #FFFFFF;
+    left: 15%;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    position: absolute;
+    right: 15%;
+    text-align: left;
+    text-shadow: none;
+    z-index: 10;
+}
+.carousel-caption p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.carousel-indicators {
+    bottom: -10px;
+    left: 50%;
+    list-style: none outside none;
+    margin-left: -30%;
+    padding-left: 0;
+    position: absolute;
+    text-align: center;
+    width: 60%;
+    z-index: 15;
+}
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #257CF5;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    width: 10px;
+    opacity: .5;
+}
+.carousel-indicators .active {
+    background-color: #257CF5;
+    border-color: #257CF5;
+    height: 10px;
+    margin: 1px;
+    width: 10px;
+    opacity: .8;
+}
+.carousel-caption h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 1.2;
+}
+.carousel-caption.ar {
+    text-align: right;
+}
+.carousel-caption.ac {
+    text-align: center;
+}
+.carousel-caption.dark {
+    color: #444;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: auto;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    min-width: 800px;
+    overflow: hidden;
+}
+.carousel-control {
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    text-align: center;
+    text-shadow: none;
+    top: 0;
+    width: 5%;
+}
+.carousel-control:hover, .carousel-control:focus {
+    color: #FFFFFF;
+    opacity: 0.3;
+    outline: medium none;
+    text-decoration: none;
+}
